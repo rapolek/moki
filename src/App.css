@@ -7,10 +7,15 @@ html{
 }
 
 .Button{
-  background-color: transparent;
+  background-color: #282c34;
+  border: solid;
   border-radius: 25%;
+  border-width: 3px;
+  border-color: #393f4a;
   padding: 25%;
   margin: 10%;
+  font-size: x-large;
+  cursor: pointer;
 }
 
 .LocationButtons{
@@ -19,3 +24,10 @@ html{
   right: 50%;
   display: flex;
   }
+
+.Video{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
