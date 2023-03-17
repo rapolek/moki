@@ -6,7 +6,7 @@ function App() {
     <div className='App'>
 
       <div className='Video'>
-        <video id='video-id' src={waves} controls autoplay loop muted playsinline preload='auto'></video>
+        <video id='video-id' src={waves} autoPlay loop muted playsInline preload='auto'></video>
       </div>
 
       <div className='LocationButtons'>
