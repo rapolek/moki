@@ -25,8 +25,8 @@ function App() {
   return (
     <div className='App'>
 
-      <div className='Video'>
-        <video id='video-id' src={video} autoPlay loop muted playsInline preload='auto'></video>
+      <div>
+        <video className='Video' id='video-id' src={video} autoPlay loop muted playsInline preload='auto'></video>
       </div>
 
       <div className='LocationButtons'>
