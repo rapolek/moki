@@ -1,23 +1,7 @@
 import './App.css';
 import {useState} from 'react';
 import waves from './media/waves.mp4';
-import mountains from './media/mountains.mp4';
-import creek from './media/creek.mp4';
-
-const LOCATIONS = [
-  {
-    emoji: "🌊",
-    video: waves,
-  },
-  {
-    emoji: "🌿",
-    video: creek,
-  },
-  {
-    emoji: "🗻",
-    video: mountains,
-  },
-]
+import LOCATIONS from './locations.js';
 
 function App() {
   const [video, setVideo] = useState(waves);
