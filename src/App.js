@@ -1,10 +1,10 @@
 import './App.css';
 import {useState} from 'react';
-import waves from './media/waves.mp4';
+import forest from './media/forest.mp4';
 import LOCATIONS from './locations.js';
 
 function App() {
-  const [video, setVideo] = useState(waves);
+  const [video, setVideo] = useState(forest);
 
   return (
     <div className='App'>
@@ -16,7 +16,7 @@ function App() {
       <div className='LocationButtons'>
         {LOCATIONS.map((location, index) => <button className='Button' key={index} onClick={() => setVideo(location.video)}>{location.emoji}</button>)}
       </div>
-
+      
     </div>
   );
 }
