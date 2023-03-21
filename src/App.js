@@ -9,14 +9,23 @@ function App() {
   return (
     <div className='App'>
 
+      <div className='Sidebar'>
+
+        <h2 className='LocationHeading'>LOCATIONS</h2>
+
+        <div className='LocationButtons'>
+          {LOCATIONS.map((location, index) => <button className='Button' key={index} onClick={() => setVideo(location.video)}>{location.emoji}</button>)}
+        </div>
+
+        <h2>TIMER</h2>
+
+      </div>
+
       <div>
         <video className='Video' id='video-id' src={video} autoPlay loop muted playsInline preload='auto'></video>
       </div>
 
-      <div className='LocationButtons'>
-        {LOCATIONS.map((location, index) => <button className='Button' key={index} onClick={() => setVideo(location.video)}>{location.emoji}</button>)}
-      </div>
-      
+
     </div>
   );
 }
