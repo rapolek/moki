@@ -31,7 +31,7 @@ h2{
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  height: 65%;
+  height: 40rem;
 }
 
 .Video{
@@ -49,8 +49,9 @@ h2{
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 15rem;
 }
 
-.LocationHeading{
-  padding-top: 1rem;
+.LocationsHeading{
+  padding-top: 2rem;
 }

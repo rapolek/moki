@@ -11,7 +11,7 @@ function App() {
 
       <div className='Sidebar'>
 
-        <h2 className='LocationHeading'>LOCATIONS</h2>
+        <h2 className='LocationsHeading'>LOCATIONS</h2>
 
         <div className='LocationButtons'>
           {LOCATIONS.map((location, index) => <button className='Button' key={index} onClick={() => setVideo(location.video)}>{location.emoji}</button>)}
