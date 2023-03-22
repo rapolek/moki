@@ -19,6 +19,10 @@ function App() {
 
         <h2>TIMER</h2>
 
+        <div className='Timer'>
+          
+        </div>
+
       </div>
 
       <div>
