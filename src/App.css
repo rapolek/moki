@@ -65,7 +65,7 @@ h2{
   justify-content: center;
 }
 
-.start-button, .pause-button{
+.start-button{
   background-color: #282c34;
   border: solid;
   border-radius: 10%;
@@ -75,9 +75,4 @@ h2{
   font-size: medium;
   color: #9a9a9c9a;
   cursor: pointer;
-}
-
-.timer-buttons{
-  display: flex;
-  gap: 1rem;
 }
