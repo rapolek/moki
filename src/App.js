@@ -25,7 +25,6 @@ function App() {
           
           <div className='timer-buttons'>
             <button className='start-button'>START</button>
-            <button className='pause-button'>PAUSE</button>
           </div>
 
         </div>
