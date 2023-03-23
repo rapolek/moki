@@ -1,10 +1,11 @@
 import './App.css';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import forest from './media/forest.mp4';
 import LOCATIONS from './locations.js';
 
 function App() {
   const [video, setVideo] = useState(forest);
+  const [timer, setTimer] = useState('00:00:00');
 
   return (
     <div className='App'>
@@ -20,7 +21,13 @@ function App() {
         <h2>TIMER</h2>
 
         <div className='Timer'>
+          <h2>{timer}</h2>
           
+          <div className='timer-buttons'>
+            <button className='start-button'>START</button>
+            <button className='pause-button'>PAUSE</button>
+          </div>
+
         </div>
 
       </div>
