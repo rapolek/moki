@@ -56,3 +56,28 @@ h2{
 .LocationsHeading{
   padding-top: 2rem;
 }
+
+.Timer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-button, .pause-button{
+  background-color: #282c34;
+  border: solid;
+  border-radius: 10%;
+  border-width: 3px;
+  border-color: #9a9a9c21;
+  font-family: 'Sono', sans-serif;
+  font-size: medium;
+  color: #9a9a9c9a;
+  cursor: pointer;
+}
+
+.timer-buttons{
+  display: flex;
+  gap: 1rem;
+}
