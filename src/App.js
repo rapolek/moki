@@ -5,7 +5,8 @@ import LOCATIONS from './locations.js';
 
 function App() {
   const [video, setVideo] = useState(forest);
-  const [timer, setTimer] = useState('00:00:00');
+  const [minutes, setMinutes] = useState(15);
+  const [seconds, setSeconds] = useState(0);
 
   return (
     <div className='App'>
@@ -21,7 +22,7 @@ function App() {
         <h2>TIMER</h2>
 
         <div className='Timer'>
-          <h2>{timer}</h2>
+          <h2>{minutes}:0{seconds}</h2>
           
           <div className='timer-buttons'>
             <button className='start-button'>START</button>
