@@ -75,4 +75,16 @@ h2 {
 	font-size: medium;
 	color: #9a9a9c9a;
 	cursor: pointer;
+	margin: 2rem;
+}
+
+.set-button {
+	cursor: pointer;
+	height: 1rem;
+}
+
+.set-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0.45rem 0
 }
