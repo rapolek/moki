@@ -6,6 +6,8 @@ h2 {
 	color: #9a9a9c9a;
 	text-align: center;
 	font-family: "Sono", sans-serif;
+	cursor: default;
+	user-select: none;
 }
 
 .App {
