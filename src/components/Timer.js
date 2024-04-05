@@ -18,7 +18,7 @@ export const Timer = () => {
 							stroke="#9a9a9c9a"
 							className="set-button"
 							onClick={() =>
-								minutes == 59 ? setMinutes(0) : setMinutes(minutes + 1)
+								minutes === 59 ? setMinutes(0) : setMinutes(minutes + 1)
 							}
 						>
 							<path
@@ -35,7 +35,7 @@ export const Timer = () => {
 							stroke="#9a9a9c9a"
 							className="set-button"
 							onClick={() =>
-								seconds == 59 ? setSeconds(0) : setSeconds(seconds + 1)
+								seconds === 59 ? setSeconds(0) : setSeconds(seconds + 1)
 							}
 						>
 							<path
@@ -57,7 +57,7 @@ export const Timer = () => {
 							stroke="#9a9a9c9a"
 							className="set-button"
 							onClick={() =>
-								minutes == 0 ? setMinutes(59) : setMinutes(minutes - 1)
+								minutes === 0 ? setMinutes(59) : setMinutes(minutes - 1)
 							}
 						>
 							<path
@@ -74,7 +74,7 @@ export const Timer = () => {
 							stroke="#9a9a9c9a"
 							className="set-button"
 							onClick={() =>
-								seconds == 0 ? setSeconds(59) : setSeconds(seconds - 1)
+								seconds === 0 ? setSeconds(59) : setSeconds(seconds - 1)
 							}
 						>
 							<path
