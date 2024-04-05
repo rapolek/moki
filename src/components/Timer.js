@@ -24,7 +24,8 @@ export const Timer = () => {
 						/>
 					</div>
 					<h2>
-						{minutes} : {seconds}
+						{minutes < 10 ? `0${minutes}` : minutes} :{" "}
+						{seconds < 10 ? `0${seconds}` : seconds}
 					</h2>
 					<div className="set-buttons">
 						<DecreaseButton
