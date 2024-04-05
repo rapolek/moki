@@ -1,8 +1,6 @@
 import { useState } from "react"
 
 export const Timer = () => {
-	const [minutes_10, setMinutes_10] = useState(0)
-	const [seconds_10, setSeconds_10] = useState(0)
 	const [minutes, setMinutes] = useState(0)
 	const [seconds, setSeconds] = useState(0)
 
@@ -19,6 +17,9 @@ export const Timer = () => {
 							strokeWidth={5}
 							stroke="#9a9a9c9a"
 							className="set-button"
+							onClick={() =>
+								minutes == 59 ? setMinutes(0) : setMinutes(minutes + 1)
+							}
 						>
 							<path
 								strokeLinecap="round"
@@ -33,6 +34,9 @@ export const Timer = () => {
 							strokeWidth={5}
 							stroke="#9a9a9c9a"
 							className="set-button"
+							onClick={() =>
+								seconds == 59 ? setSeconds(0) : setSeconds(seconds + 1)
+							}
 						>
 							<path
 								strokeLinecap="round"
@@ -42,9 +46,7 @@ export const Timer = () => {
 						</svg>
 					</div>
 					<h2>
-						{minutes_10}
-						{minutes} : {seconds_10}
-						{seconds}
+						{minutes} : {seconds}
 					</h2>
 					<div className="set-buttons">
 						<svg
@@ -54,6 +56,9 @@ export const Timer = () => {
 							strokeWidth={5}
 							stroke="#9a9a9c9a"
 							className="set-button"
+							onClick={() =>
+								minutes == 0 ? setMinutes(59) : setMinutes(minutes - 1)
+							}
 						>
 							<path
 								strokeLinecap="round"
@@ -68,6 +73,9 @@ export const Timer = () => {
 							strokeWidth={5}
 							stroke="#9a9a9c9a"
 							className="set-button"
+							onClick={() =>
+								seconds == 0 ? setSeconds(59) : setSeconds(seconds - 1)
+							}
 						>
 							<path
 								strokeLinecap="round"
