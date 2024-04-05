@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { IncreaseButton } from "./IncreaseButton"
+import { DecreaseButton } from "./DecreaseButton"
 
 export const Timer = () => {
 	const [minutes, setMinutes] = useState(0)
@@ -10,79 +12,31 @@ export const Timer = () => {
 			<div className="Timer">
 				<div>
 					<div className="set-buttons">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							strokeWidth={5}
-							stroke="#9a9a9c9a"
-							className="set-button"
+						<IncreaseButton
 							onClick={() =>
 								minutes === 59 ? setMinutes(0) : setMinutes(minutes + 1)
 							}
-						>
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								d="m4.5 15.75 7.5-7.5 7.5 7.5"
-							/>
-						</svg>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							strokeWidth={5}
-							stroke="#9a9a9c9a"
-							className="set-button"
+						/>
+						<IncreaseButton
 							onClick={() =>
 								seconds === 59 ? setSeconds(0) : setSeconds(seconds + 1)
 							}
-						>
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								d="m4.5 15.75 7.5-7.5 7.5 7.5"
-							/>
-						</svg>
+						/>
 					</div>
 					<h2>
 						{minutes} : {seconds}
 					</h2>
 					<div className="set-buttons">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							strokeWidth={5}
-							stroke="#9a9a9c9a"
-							className="set-button"
+						<DecreaseButton
 							onClick={() =>
 								minutes === 0 ? setMinutes(59) : setMinutes(minutes - 1)
 							}
-						>
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								d="m19.5 8.25-7.5 7.5-7.5-7.5"
-							/>
-						</svg>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							strokeWidth={5}
-							stroke="#9a9a9c9a"
-							className="set-button"
+						/>
+						<DecreaseButton
 							onClick={() =>
 								seconds === 0 ? setSeconds(59) : setSeconds(seconds - 1)
 							}
-						>
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								d="m19.5 8.25-7.5 7.5-7.5-7.5"
-							/>
-						</svg>
+						/>
 					</div>
 				</div>
 				{/* <div className="timer-buttons">
