@@ -18,7 +18,7 @@ h2 {
 	background-color: #282c34;
 	border: solid;
 	border-radius: 25%;
-	border-width: 3px;
+	border-width: 0.2rem;
 	border-color: #9a9a9c21;
 	padding: 1rem;
 	font-size: x-large;
@@ -70,10 +70,11 @@ h2 {
 	background-color: #282c34;
 	border: solid;
 	border-radius: 10%;
-	border-width: 3px;
+	border-width: 0.2rem;
 	border-color: #9a9a9c21;
 	font-family: "Sono", sans-serif;
-	font-size: medium;
+	font-weight: bold;
+	font-size: large;
 	color: #9a9a9c9a;
 	cursor: pointer;
 	margin: 2rem;

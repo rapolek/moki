@@ -40,9 +40,9 @@ export const Timer = () => {
 						/>
 					</div>
 				</div>
-				{/* <div className="timer-buttons">
+				<div className="timer-buttons">
 					<button className="start-button">START</button>
-				</div> */}
+				</div>
 			</div>
 		</>
 	)
