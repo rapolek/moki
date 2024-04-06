@@ -1,9 +1,9 @@
 import { Sidebar } from "./components/Sidebar"
-import "./App.css"
+import "./styles/globals.css"
 
 function App() {
 	return (
-		<div className="App">
+		<div className="select-none">
 			<Sidebar/>
 		</div>
 	)
