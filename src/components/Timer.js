@@ -64,7 +64,7 @@ export const Timer = () => {
 				</div>
 				<div className="flex justify-evenly m-8">
 					<button
-						className="px-2 font-sans font-extrabold text-neutral-500 gap-4 border border-2 border-neutral-600 rounded-lg"
+						className="px-2 font-sans font-black text-lg text-neutral-500 gap-4 border border-2 border-neutral-600 rounded-lg"
 						onClick={() => setStart(!start)}
 					>
 						{start ? "STOP" : "START"}
