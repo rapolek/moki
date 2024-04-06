@@ -5,6 +5,7 @@ import { DecreaseButton } from "./DecreaseButton"
 export const Timer = () => {
 	const [minutes, setMinutes] = useState(0)
 	const [seconds, setSeconds] = useState(0)
+	const [start, setStart] = useState(false)
 
 	return (
 		<>
@@ -42,7 +43,9 @@ export const Timer = () => {
 				</div>
 				<div className="timer-buttons">
 					<button className="start-button">SET</button>
-					<button className="start-button">START</button>
+					<button className="start-button" onClick={() => setStart(!start)}>
+						{start ? "STOP" : "START"}
+					</button>
 				</div>
 			</div>
 		</>
