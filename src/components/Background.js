@@ -2,7 +2,7 @@ export const Background = (props) => {
 	return (
 		<div>
 			<video
-				className="Video"
+				className="absolute h-screen w-screen object-cover -z-10 top-0 left-0"
 				id="video-id"
 				src={props.src}
 				autoPlay

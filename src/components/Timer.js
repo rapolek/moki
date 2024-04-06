@@ -29,9 +29,11 @@ export const Timer = () => {
 	return (
 		<>
 			<div className="Timer">
-				<h2>TIMER</h2>
+				<h2 className=" mb-4 font-sans font-black text-center text-2xl text-neutral-500">
+					TIMER
+				</h2>
 				<div>
-					<div className="set-buttons">
+					<div className="flex justify-between mx-[4.7rem]">
 						<IncreaseButton
 							onClick={() =>
 								minutes === 59 ? setMinutes(0) : setMinutes(minutes + 1)
@@ -43,11 +45,11 @@ export const Timer = () => {
 							}
 						/>
 					</div>
-					<h2>
+					<h2 className=" my-4 font-sans font-black text-center text-2xl text-neutral-500">
 						{minutes < 10 ? `0${minutes}` : minutes} :{" "}
 						{seconds < 10 ? `0${seconds}` : seconds}
 					</h2>
-					<div className="set-buttons">
+					<div className="flex justify-between mx-[4.7rem]">
 						<DecreaseButton
 							onClick={() =>
 								minutes === 0 ? setMinutes(59) : setMinutes(minutes - 1)
@@ -60,9 +62,11 @@ export const Timer = () => {
 						/>
 					</div>
 				</div>
-				<div className="timer-buttons">
-					<button className="start-button">SET</button>
-					<button className="start-button" onClick={() => setStart(!start)}>
+				<div className="flex justify-evenly m-8">
+					<button
+						className="px-2 font-sans font-extrabold text-neutral-500 gap-4 border border-2 border-neutral-600 rounded-lg"
+						onClick={() => setStart(!start)}
+					>
 						{start ? "STOP" : "START"}
 					</button>
 				</div>

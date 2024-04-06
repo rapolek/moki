@@ -6,7 +6,7 @@ export const IncreaseButton = (props) => {
 			viewBox="0 0 24 24"
 			strokeWidth={5}
 			stroke="#9a9a9c9a"
-			className="set-button"
+			className="h-4 cursor-pointer"
 			onClick={props.onClick}
 		>
 			<path

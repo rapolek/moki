@@ -8,13 +8,15 @@ export const Sidebar = (props) => {
 	const [video, setVideo] = useState(forest)
 
 	return (
-		<div className="Sidebar">
+		<div className="flex flex-col h-screen w-60 bg-neutral-800">
 			<Background src={video} />
-			<h2 className="LocationsHeading">LOCATIONS</h2>
-			<div className="LocationButtons">
+			<h2 className="pt-8 font-sans font-black text-center text-2xl text-neutral-500">
+				LOCATIONS
+			</h2>
+			<div className="flex flex-col flex-wrap justify-center content-center items-center h-[40rem] gap-4">
 				{LOCATIONS.map((location, index) => (
 					<button
-						className="Button"
+						className="border rounded-xl border-neutral-700 border-2 p-4 text-2xl"
 						key={index}
 						onClick={() => setVideo(location.video)}
 					>
