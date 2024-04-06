@@ -7,6 +7,25 @@ export const Timer = () => {
 	const [seconds, setSeconds] = useState(0)
 	const [start, setStart] = useState(false)
 
+	const startTimer = () => {
+		const timerTimeout = setTimeout(() => setSeconds(seconds - 1), 1000)
+
+		if (minutes !== 0 && seconds === 0) {
+			setMinutes(minutes - 1)
+			setSeconds(59)
+		}
+		if (minutes === 0 && seconds === 0) {
+			alert("TIME'S UP!")
+			setStart(!start)
+			clearTimeout(timerTimeout)
+			return 0
+		}
+	}
+
+	if (start) {
+		startTimer()
+	}
+
 	return (
 		<>
 			<div className="Timer">
