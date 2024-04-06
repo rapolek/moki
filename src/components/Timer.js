@@ -8,8 +8,8 @@ export const Timer = () => {
 
 	return (
 		<>
-			<h2>TIMER</h2>
 			<div className="Timer">
+				<h2>TIMER</h2>
 				<div>
 					<div className="set-buttons">
 						<IncreaseButton
@@ -41,6 +41,7 @@ export const Timer = () => {
 					</div>
 				</div>
 				<div className="timer-buttons">
+					<button className="start-button">SET</button>
 					<button className="start-button">START</button>
 				</div>
 			</div>

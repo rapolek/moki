@@ -66,6 +66,12 @@ h2 {
 	justify-content: center;
 }
 
+.timer-buttons {
+	display: flex;
+	gap: 1rem;
+	margin: 2rem;
+}
+
 .start-button {
 	background-color: #282c34;
 	border: solid;
@@ -77,7 +83,6 @@ h2 {
 	font-size: large;
 	color: #9a9a9c9a;
 	cursor: pointer;
-	margin: 2rem;
 }
 
 .set-button {
