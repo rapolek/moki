@@ -10,7 +10,7 @@ export const Sidebar = (props) => {
 	return (
 		<div className="flex flex-col h-screen w-60 bg-neutral-800">
 			<Background src={video} />
-			<h2 className="pt-8 font-sans font-black text-center text-2xl text-neutral-500">
+			<h2 className="my-6 font-sans font-black text-center text-2xl text-neutral-500">
 				LOCATIONS
 			</h2>
 			<div className="flex flex-col flex-wrap justify-center content-center items-center h-[40rem] gap-4">
