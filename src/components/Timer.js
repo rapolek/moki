@@ -33,7 +33,7 @@ export const Timer = () => {
 					TIMER
 				</h2>
 				<div>
-					<div className="flex justify-between mx-[4.7rem]">
+					<div className="flex justify-between mx-[4.4rem]">
 						<IncreaseButton
 							onClick={() =>
 								minutes === 59 ? setMinutes(0) : setMinutes(minutes + 1)
@@ -49,7 +49,7 @@ export const Timer = () => {
 						{minutes < 10 ? `0${minutes}` : minutes} :{" "}
 						{seconds < 10 ? `0${seconds}` : seconds}
 					</h2>
-					<div className="flex justify-between mx-[4.7rem]">
+					<div className="flex justify-between mx-[4.4rem]">
 						<DecreaseButton
 							onClick={() =>
 								minutes === 0 ? setMinutes(59) : setMinutes(minutes - 1)
