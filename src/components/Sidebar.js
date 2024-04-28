@@ -8,7 +8,7 @@ export const Sidebar = (props) => {
 	const [video, setVideo] = useState(forest)
 
 	return (
-		<div className="flex flex-col h-screen w-60 bg-neutral-800">
+		<div className="flex flex-col h-screen w-60 bg-neutral-800 overflow-y-scroll">
 			<Background src={video} />
 			<h2 className="my-6 font-sans font-black text-center text-2xl text-neutral-500">
 				LOCATIONS
