@@ -28,7 +28,7 @@ export const Timer = () => {
 
 	return (
 		<>
-			<div className="Timer">
+			<div className="h-80">
 				<h2 className="my-6 font-sans font-black text-center text-2xl text-neutral-500">
 					TIMER
 				</h2>
